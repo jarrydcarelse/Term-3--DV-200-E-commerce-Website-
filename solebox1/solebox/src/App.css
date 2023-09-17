@@ -1,0 +1,588 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add this CSS to a separate .css or .scss file and import it into your component */
+
+/* Style the AppHeader container */
+.app-header {
+  background-color: rgb(255, 255, 255); /* White background color */
+  text-align: center; /* Center-align text */
+  color: black; /* Black text color */
+  padding: 20px 0; /* Add padding as needed */
+}
+
+/* Style the header img element (logo) */
+.app-header header img {
+  color: black;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto;
+  display: block; /* Center the image horizontally */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Style the SoleBox header text */
+.solebox-header {
+  color: black;
+  font-size: 36px; /* Adjust font size as needed for large text */
+  font-weight: bold; /* Bold font weight */
+  margin-top: 20px; /* Adjust spacing from the logo as needed */
+}
+
+/* Style the navigation links */
+.app-header .nav-links ul {
+  color: black;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px; /* Adjust spacing from the logo as needed */
+}
+
+.app-header .nav-links ul li {
+  color: black;
+  display: inline-block;
+  margin: 0 10px; /* Adjust spacing between links as needed */
+}
+
+/* Style the navigation links */
+.app-header .nav-links ul li a {
+  text-decoration: none;
+  color: black; /* Set the text color to black */
+  font-weight: bold;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Add this CSS to a separate .css or .scss file and import it into your component */
+
+/* Style the cart image */
+.cart-icon {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  position: absolute;
+  top: 30px;
+  right: 90px;
+}
+
+/* Style the cart link (optional) */
+.cart-link {
+  text-decoration: none;
+  display: inline-block; /* Ensure the link area includes the entire image */
+}
+/* Add this CSS to a separate .css or .scss file and import it into your component */
+
+/* Style the cart icon */
+
+
+/* Style the login icon */
+.login-icon {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  /* Positioning for login icon */
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  
+  
+}
+.icon-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Center items vertically within the container */
+}
+
+
+
+/* Footer */
+
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a minimum height for the wrapper to occupy the full viewport height */
+.wrapper {
+  min-height: 100vh; /* 100% of the viewport height */
+  position: relative; /* Relative positioning is essential */
+}
+
+/* Style your page content */
+/* For example, you can set padding for the top to create space for your header/navigation */
+.wrapper {
+  padding-top: 60px; /* Adjust as needed for your header/navigation height */
+}
+
+/* Style the footer */
+/* Footer.css or your footer component's CSS */
+.footer {
+  position: fixed; /* Position it at the bottom and make it fixed */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(17, 80, 149, 1); /* Customize the background color */
+  color: #fff; /* Customize the text color */
+  text-align: center;
+  padding: 5px ; /* Add padding for better appearance */
+}
+
+
+
+
+ /* Home.js*/ 
+ /* Home.css */
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slider img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.about-section {
+  margin-top: 20px;
+}
+
+.latest-sneakers {
+  margin-top: 20px;
+}
+
+.sneaker-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sneaker-item {
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sneaker-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Add more styling as needed */
+
+
+/* Product page */
+
+/* Product.css */
+
+.product-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #007bff; /* Change the color as needed */
+}
+
+.product-description {
+  margin-top: 10px;
+  color: #555;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade of the primary color on hover */
+}
+
+
+
+/* Login.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade of the primary color on hover */
+}
+
+/* You can add more styles as needed */
+
+
+
+/* Checkout page */
+
+/* Checkout.css */
+
+/* Checkout.css */
+
+.checkout-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade of the primary color on hover */
+}
+
+/* Cart Summary Styles */
+.cart-summary {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.cart-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-summary li {
+  margin-bottom: 5px;
+}
+
+.cart-summary p {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* You can add more styles as needed */
+
+/* Cart page */
+
+/* Cart.css */
+
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+
+table th {
+  background-color: #f9f9f9;
+}
+
+table img {
+  max-width: 100px;
+  height: auto;
+}
+
+input[type="number"] {
+  width: 40px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Add some margin to separate the input from other elements */
+input[type="number"] {
+  margin-right: 5px;
+}
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.cart-total p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Slider.css */
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  max-height: 450px; /* Increase the desired height */
+  overflow: hidden;
+  margin: 0; /* Remove the top margin */
+  padding: 0; /* Remove padding */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust styles for the first slide */
+.slider-container img:first-child {
+  object-fit: cover; /* Ensure the image covers the entire container */
+  width: 100%; /* Adjust width to cover the container */
+  height: 100%; /* Adjust height to cover the container */
+  background-color: #f0f0f0; /* Add a background color if the image has transparency */
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%; /* Maintain aspect ratio and cover container */
+  object-fit: cover;
+}
+
+/* ... (rest of your CSS) */
+
+/* Sneaker Carousel */
+
+/* SneakerCarousel.css */
+.sneaker-carousel {
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+
+
+/* Add this CSS to your stylesheet */
+
+.products-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sneaker-row {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if the content overflows */
+  gap: 20px; /* Adjust the gap between sneakers */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Add spacing between rows */
+  padding-bottom: 20px; /* Add padding at the bottom of each row */
+  border-bottom: 1px solid #ccc; /* Add a border between rows */
+  white-space: nowrap; /* Prevent wrapping of content within each row */
+}
+
+.sneaker-item {
+  max-width: 200px; /* Set a maximum width for each sneaker item */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #8b8b8b;
+  border-radius: 10px;
+ 
+}
+
+.sneaker-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the Add to Cart button */
+.sneaker-item button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Add hover effect to the Add to Cart button */
+.sneaker-item button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* In your CSS file for SneakersOfTheWeek */
+.sneakers-of-the-week {
+  margin-top: 40px;
+}
+
+.sneakers-list {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to the next line */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  gap: 20px; /* Adjust the gap between sneakers */
+}
+
+.sneaker-item {
+  flex: 0 0 auto; /* Prevent sneakers from stretching to fill the space */
+  max-width: 200px; /* Adjust the maximum width of each sneaker */
+  text-align: center;
+}
+
+.sneaker-item img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd; /* Add a border around each sneaker */
+  border-radius: 4px; /* Optional: Add rounded corners to the sneakers */
+}
+
+.sneaker-item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
